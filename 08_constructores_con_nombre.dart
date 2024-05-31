@@ -33,7 +33,6 @@ class Hero {
 
   @override
   String toString() {
-    // TODO: implement toString
     return '$name, $power, ${isAlive ? 'isAlive' : 'isNotAlive'}';
   }
 }

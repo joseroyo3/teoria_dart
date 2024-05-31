@@ -1,5 +1,6 @@
 void main() {
-  final mySquare = Square(side: 10);
+  final mySquare = Square(side: -10);
+  print('Area: ${mySquare.area}');
 
   mySquare.side = 1; //NO QUEREMOS QUE SEA PUBLIC, y menos negativo
 
@@ -10,8 +11,10 @@ class Square {
   // _ significa PRIVADO
   double _side;
 
-// Constructor
-  Square({required double side}) : _side = side;
+// Constructor, primer ASSERT y luego asignaciones
+  Square({required double side})
+      : assert(side > 0, 'side must be >=0'),
+        _side = side;
 
 // Getter/Setter,única manera
   double get area {
