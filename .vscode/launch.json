@@ -8,7 +8,7 @@
             "name": "Dart & Flutter",
             "request": "launch",
             "type": "dart",
-            "program": "12_mixins.dart"
+            "program": "15_try_on_catch_finally.dart"
         }
     ]
 }
