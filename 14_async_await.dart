@@ -29,7 +29,7 @@ Future<String> httpGet(String url) async {
   await Future.delayed(const Duration(seconds: 5));
 
   throw 'Error en la petición';
-  return 'Tenemos un valor de la petición';
+  // return 'Tenemos un valor de la petición';
 
   // return Future.delayed(const Duration(seconds: 1), () {
   //   throw 'Error en la petición http';
